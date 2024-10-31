@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Construction Co</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Include AOS library -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+      <!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar" data-aos="fade-down">
+    <div class="container-fluid">
+        <a class="navbar-brand custom-brand" href="index.html">
+            <img src="images/logo.jpg" alt="Yoga Studio Logo" style="height: 80px;">
+            Yoga Studio
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active custom-nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="classes.html">Classes</a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="blog.html">Blog</a>
+                </li>-->
+                <li class="nav-item">
+                    <a class="nav-link custom-nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <a class="nav-link btn bg-warning text-dark btn-custom" href="classes.html">Join Now</a>
+            </form>
+            
+        </div>
+    </div>
+</nav>
+
+  
+
+    <!-- Hero Section with Carousel -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="images/hero1.jpg" class="d-block w-100" alt="Yoga Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Welcome to Your Yoga Journey</h1>
+                        <p>Find your balance, strength, and peace.</p>
+                        <a href="classes.html" class="btn btn-primary">Join a Class</a>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="images/hero2.jpg" class="d-block w-100" alt="Yoga Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Experience the Power of Yoga</h1>
+                        <p>Transform your body and mind with us.</p>
+                        <a href="classes.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="images/contact.jpg" class="d-block w-100" alt="Yoga Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Strengthen Your Mind and Body</h1>
+                        <p>Yoga classes for all skill levels.</p>
+                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    
+
+    <!-- Featured Classes Section -->
+    <section id="featured-classes" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Classes</h2>
+            <div class="row">
+                <!-- Class 1 -->
+                <div class="col-md-4">
+                    <div class="card class-card hover-zoom">
+                        <img src="images/1stclass.jpg" class="card-img-top" alt="Hatha Yoga">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Hatha Yoga</h5>
+                            <p class="card-text">A gentle introduction to the most basic yoga postures. Great for beginners.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Class 2 -->
+                <div class="col-md-4">
+                    <div class="card class-card hover-zoom">
+                        <img src="images/2ndclass.jpg" class="card-img-top" alt="Vinyasa Yoga">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Vinyasa Yoga</h5>
+                            <p class="card-text">Flow through poses seamlessly, coordinating breath and movement.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Class 3 -->
+                <div class="col-md-4">
+                    <div class="card class-card hover-zoom">
+                        <img src="images/3rdclass.jpg" class="card-img-top" alt="Restorative Yoga">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Restorative Yoga</h5>
+                            <p class="card-text">A relaxing yoga class that focuses on releasing tension and restoring balance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet the Instructors Section -->
+    <section class="instructors-section py-5" data-aos="fade-up">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="animate-on-scroll">Meet Our Instructors</h2>
+                <!-- Instructor Card 1 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card instructor-card hover-card">
+                        <img src="images/instructo-1.jpg" class="card-img-top" alt="Instructor Image">
+                        <div class="card-body">
+                            <h5 class="card-title" id="ih-1">Instructor 1</h5>
+                            <p class="card-text" id="ip-1" >Expert in Hatha Yoga with over 10 years of teaching experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Card 2 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card instructor-card hover-card">
+                        <img src="images/instructor-2.jpg" class="card-img-top" alt="Instructor Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Instructor 2</h5>
+                            <p class="card-text">A seasoned practitioner of Ashtanga Yoga and mindfulness training.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Instructor Card 3 -->
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="card instructor-card hover-card">
+                        <img src="images/instructor4.jpg" class="card-img-top" alt="Instructor Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Instructor 3</h5>
+                            <p class="card-text">Specializes in Vinyasa Flow and holistic wellness coaching.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta-section py-5 bg-dark text-light text-center" data-aos="fade-up">
+        <div class="container animate-on-scroll">
+            <h2>Ready to Start Your Yoga Journey?</h2>
+            <p>Join our yoga classes today and transform your body and mind.</p>
+            <a href="classes.html" class="btn btn-warning btn-lg">Join Us</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center hover-scale">
+                        <p>"Yoga with this studio has completely changed my life. I feel more balanced and energized!"</p>
+                        <p class="text-muted">- Sarah M.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center hover-scale">
+                        <p>"The classes here are amazing! I've learned so much and feel stronger with every session."</p>
+                        <p class="text-muted">- James L.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center hover-scale">
+                        <p>"I love how restorative and peaceful the classes are. My stress levels have dropped significantly."</p>
+                        <p class="text-muted">- Emma C.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links -->
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="classes.html" class="text-white">Classes</a></li>
+                        <li><a href="blog.html" class="text-white">Blog</a></li>
+                        <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Yoga Services -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <h5>Our Classes</h5>
+                    <ul class="list-unstyled">
+                        <li>Beginner Yoga</li>
+                        <li>Advanced Yoga</li>
+                        <li>Meditation Sessions</li>
+                        <li>Private Yoga Classes</li>
+                    </ul>
+                </div>
+    
+                <!-- Social Media -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Contact Information -->
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <h5>Contact Us</h5>
+                    <p>789 Yoga St, Serenity City, Peace Country</p>
+                    <p>Phone: +987-654-3210</p>
+                    <p>Email: info@yogastudio.com</p>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="400">
+                <p class="mb-0">© <span id="currentYear"></span> Yoga Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include AOS library -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+    
+
+    <!-- Include Custom JS -->
+    <script src="js/custom.js"></script>
+
+    
+</body>
+</html>
