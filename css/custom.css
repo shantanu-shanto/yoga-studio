@@ -7,13 +7,59 @@ body {
     background-color: var(--primary-color); /* Optional to apply the color globally */
 }
 
-.navbar,
-#hero-carousel {
-    margin: 0;
-    padding: 0;
+.custom-navbar .navbar-collapse {
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    align-items: center;    /* Centers the nav items vertically */
+}
+
+.custom-navbar .navbar-nav {
+    gap: 40px; /* Adds spacing between nav items */
+}
+
+.custom-navbar .nav-link {
+    font-size: 1rem;
+    
+    text-transform: uppercase;
+}
+
+.custom-navbar .navbar-brand {
+    
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    gap: 10px;
+}
+.custom-navbar .nav-link {
+    color: #464646; /* Change to your desired color */
+    font-weight: bold; /* Optional: Make text bold */
+    text-transform: uppercase; /* Optional: Capitalize text */
+    transition: color 0.3s ease; /* Optional: Smooth color change on hover */
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ffffff; /* Change hover color */
 }
 .card-img-top {
     cursor: pointer;
+}
+
+.text-overlay {
+    color: #ffffff; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 5px; /* Optional: Rounded corners */
+    
+    text-align: center; /* Aligns the text */
+    
+}
+.text-color{
+    color: #ffffff;
+    font-weight: bold; /* Bold text */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+
 }
 /* Hero Section */
 .hero-section {
@@ -145,6 +191,19 @@ section {
     right: 0;
     transform: translateY(-50%);
     z-index: 10;
+}
+#hero .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#hero .carousel-caption h1,
+#hero .carousel-caption p,
+#hero .carousel-caption a {
+    margin-bottom: 15px;
 }
 
 #hero-carousel .btn {
